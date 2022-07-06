@@ -3,10 +3,10 @@
 <!-- Production Project -->
 
 <!DOCTYPE project [
-<!ENTITY user_id "markross">
+<!ENTITY user_id "juliaw">
 <!ENTITY number_of_jobs "20">
-<!ENTITY number_of_events "1000"> 
-<!ENTITY name "Coherent_SP_v1.1_1k">
+<!ENTITY number_of_events "180"> 
+<!ENTITY name "Neutrinos_TMM_v1.1_1k">
 <!ENTITY release "v08_00_00_43"> 
 <!ENTITY file_type "mc">
 <!ENTITY run_type "physics">
@@ -37,7 +37,7 @@
   <check>0</check>
   <copy>0</copy>
 
-   <fcldir>/pnfs/uboone/resilient/users/markross/fcls</fcldir>
+   <fcldir>/pnfs/uboone/resilient/users/juliaw/fcls</fcldir>
 
   <!-- Project stages -->
 
@@ -58,9 +58,9 @@
   
     <!-- Input mode is key, tells you what the input to expect, i.e Artroot file usuall-->
     <inputmode>textfile</inputmode>
-    <inputlist>/nevis/milne/files/jw4319/hepevt_splited_events50_final.list</inputlist>
-    <jobsub> --expected-lifetime=medium --append_condor_requirements='(TARGET.HAS_CVMFS_uboone_opensciencegrid_org==true)' -f /pnfs/uboone/resilient/users/markross/tars/proton_conversion.root -f /pnfs/uboone/resilient/users/markross/tars/MCC9_channel_list.txt </jobsub>
-    <jobsub_start>   --append_condor_requirements='(TARGET.HAS_CVMFS_uboone_opensciencegrid_org==true)' -f /pnfs/uboone/resilient/users/markross/tars/proton_conversion.root -f /pnfs/uboone/resilient/users/markross/tars/MCC9_channel_list.txt  </jobsub_start>
+    <inputlist>/Users/juliawoodward/final_splited_events/hepevt_splited_50events.list</inputlist>
+    <jobsub> --expected-lifetime=medium --append_condor_requirements='(TARGET.HAS_CVMFS_uboone_opensciencegrid_org==true)' -f /pnfs/uboone/resilient/users/juliaw/tars/proton_conversion.root -f /pnfs/uboone/resilient/users/juliaw/tars/MCC9_channel_list.txt </jobsub>
+    <jobsub_start>   --append_condor_requirements='(TARGET.HAS_CVMFS_uboone_opensciencegrid_org==true)' -f /pnfs/uboone/resilient/users/juliaw/tars/proton_conversion.root -f /pnfs/uboone/resilient/users/juliaw/tars/MCC9_channel_list.txt  </jobsub_start>
   </stage>  
  
   <!-- file type -->
